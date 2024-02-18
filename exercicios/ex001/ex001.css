@@ -1,0 +1,35 @@
+* {
+    font-family: arial;
+}
+/*
+body {
+}
+*/
+h1 {
+    color: white;
+    font-size: 40px;
+}
+p {
+    color: white;
+    font-size: 20px;
+    font-weight: 400;
+}
+
+div.conteiner {
+    background-color: white;
+    border-radius: 10px;
+    box-shadow: 2px 2px 5px black;
+    width: 470px;
+    padding: 10px 0 20px 0;
+}
+
+#image-st {
+    width: 250px;
+    height: 250px;
+    border-radius: 50%;
+}
+
+#hh4, p{
+    color: white;
+    text-shadow: 2px 2px 2px black;
+}

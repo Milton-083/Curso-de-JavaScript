@@ -1,0 +1,79 @@
+* {
+}
+
+body {
+    background-color: gold;
+}
+
+.conteiner {
+    background-color: rgba(17, 17, 17, 0.877);
+    padding: 2%;
+    border-radius: 30px;
+    max-width: 400px;
+}
+
+.conteiner h1 {
+    color: white;
+    font-family: arial;
+    font-size: 35px;
+    font-weight: 800;
+}
+
+.conteiner .dados {
+    background-color: rgb(0, 225, 255);
+    padding: 3%;
+    border-radius: 30px;
+}
+
+.conteiner .dados form input {
+    width: 236px;
+    margin: 5px;
+    padding: 5px 10px;
+    text-align: center;
+    border-radius: 20px;
+}
+
+.conteiner .dados form #input-nome, #input-apelido, #input-senha, #input-confirmar-senha {
+    width: 100px;
+}
+
+.conteiner .dados form select {
+    margin: 5px;
+    padding: 5px 10px;
+    width: 77px;
+    border-radius: 20px;
+}
+.conteiner .dados form #select-pais {
+    width: 258px;
+}
+.conteiner .dados form #sexo {
+    width: 120px;
+}
+
+p {
+    color: black;
+    font-weight: 600;
+    margin: 8px 0 4px 0;
+    border-top: 2px solid white;
+    margin: 4px 90px 2px 90px;
+    padding: 2px;
+}
+
+#input-submeter {
+    margin: 100px 40px 30px 0;
+    background-color: greenyellow;
+    font-weight: 700;
+    border: 2px solid red;
+    width: 100px;
+    padding: 10px;
+
+}
+#input-limpar {
+    margin: 100px 0 30px 40px;
+    background-color: red;
+    color: white;
+    font-weight: 700;
+    border: 2px solid greenyellow;
+    width: 100px;
+    padding: 10px;
+}

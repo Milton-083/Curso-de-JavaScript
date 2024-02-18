@@ -1,0 +1,65 @@
+* {
+    font-family: arial;
+}
+
+body {
+    background-color: blanchedalmond;
+    height: 100vh;
+}
+
+div.conteiner {
+    width: 100%;
+    margin: 0;
+    padding: 0;
+}
+
+div.conteiner h1 {
+    color: white;
+    font-weight: 900;
+    font-size: 40px;
+}
+.conteiner h1 span {
+    color: rgb(66, 66, 255);
+}
+.conteiner h1 .m {
+    color: red;
+}
+
+.coletar-dados {
+    height: 70vh;
+    padding-top: 90px;
+}
+
+.coletar-dados input {
+    margin: 5px;
+    padding: 4px 0;
+    border: 1px solid red;
+    cursor: pointer;
+    text-align: center;
+}
+.coletar-dados input::placeholder {
+    text-align: center
+}
+
+input#enviar {
+    margin: 50px;
+    background-color: greenyellow;
+    padding: 10px 7px;
+    font-weight: 600;
+    border: 1px solid blue;
+}
+input#enviar:hover {
+    background-color: rgba(172, 255, 47, 0.5);
+}
+
+#saida-txt {
+    background-color: rgb(252, 181, 95);
+    height: 150px;
+    width: 90%;
+    border: 5px ridge white;
+    border-radius: 20px;
+    color: white;
+    padding: 2%;
+    text-align: center;
+}
+

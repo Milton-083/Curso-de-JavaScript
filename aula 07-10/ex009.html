@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login</title>
+    <style>
+        body {
+            background: radial-gradient(rgba(255, 0, 0, 0.486), orange);
+            height: 130vh;
+        }
+        .conteiner {
+            margin: 5%;
+            padding-left: 5%;
+            padding-right: 5%;
+            height: 90vh;
+            margin-top: 50px;
+            border: 5px solid white;
+            border-radius: 30px;
+            display: block;
+        }
+        h1 {
+            color: white;
+            margin: 10%;
+            margin-bottom: 10%;
+            height: 40px;
+            text-align: center;
+        }
+        .dados {
+            margin: 3px;
+        }
+        input {
+            margin-top: 2%;
+            padding: 5px 20px 5px 20px;
+            border: none;
+            border: 2px solid orangered;
+            border-radius: 10px;
+            text-align: center;
+        }
+        input::placeholder {
+            text-align: center;
+        }
+        #submeter {
+            margin: 5%;
+            color: rgb(0, 0, 0);
+            font-weight: 600;
+            background-color: greenyellow;
+        }
+        .dados-visivel {
+            border: 5px solid white;
+            border-top-right-radius: 15px;
+            border-bottom-left-radius: 15px;
+            height: 33vh;
+            margin-top: 10px;
+            background: radial-gradient(rgb(255, 0, 0), orange);
+            color: white;
+        }
+        .d-v {
+            border-radius: 5px;
+            margin-left: 17px;
+            width: 90%;
+            line-height: 30px;
+            text-align: center;
+        }
+        .d-v h3, #d-v-1, #d-v-2, #d-v-3, #d-v-4 {
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+    <div class="conteiner">
+        <h1>Login</h1>
+        <div class="dados">
+            <center>
+                <input type="text" name="first-name" id="nomehtml" placeholder="nome" src="a">
+                <input type="text" name="last-name" id="apelidohtml" placeholder="apelido" src="">
+                <br>
+                <input type="email" name="email" id="emailhtml" placeholder="email" src="">
+                <br>
+                <input type="password" name="password" id="senhahtml" placeholder="senha" src="">
+                <br>
+                <input type="submit" value="Enviar" id="submeter" onclick="enviar()">
+            </center>
+        </div>
+        <div class="dados-visivel">
+            <div class="d-v" id="d-v-1">
+                <h3 id="d-v-1-h3"></h3>
+            </div>
+            <div class="d-v" id="d-v-2">
+                <h3 id="d-v-2-h3"></h3>
+            </div>
+            <div class="d-v" id="d-v-3">
+                <h3 id="d-v-3-h3"></h3>
+            </div>
+            <div class="d-v" id="d-v-4">
+                <h3 id="d-v-4-h3"></h3>
+            </div>
+        </div>
+    </div>
+    
+    <script>
+        function enviar() {
+            var recebe1 = window.document.getElementById("nomehtml")
+            var recebe2 = window.document.getElementById("apelidohtml")
+            var recebe3 = window.document.getElementById("emailhtml")
+            var recebe4 = window.document.getElementById("senhahtml")
+
+            var imprime1 = String(recebe1.value)
+            var imprime2 = String(recebe2.value)
+            var imprime3 = String(recebe3.value)
+            var imprime4 = String(recebe4.value)
+
+            window.document.getElementById("d-v-1-h3").innerHTML=imprime1
+            window.document.getElementById("d-v-2-h3").innerHTML=imprime2
+            window.document.getElementById("d-v-3-h3").innerHTML=imprime3
+            window.document.getElementById("d-v-4-h3").innerHTML=imprime4
+
+        }
+    </script>
+</body>
+</html>

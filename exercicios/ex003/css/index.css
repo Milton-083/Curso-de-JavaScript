@@ -1,0 +1,135 @@
+* {
+    font-family: arial;
+    text-decoration: none;
+    margin: 0;
+    padding: 0;
+    color: white;
+}
+
+body {
+    
+    height: 200vh;
+    background-color: black;
+}
+
+.btn-principal {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.btn-altera {
+    padding: 8px;
+    margin: 20px;
+    font-size: 18px;
+    font-weight: 600;
+    background-color: black;
+    color: rgb(0, 195, 255);
+    border: 3px solid rgb(0, 195, 255);
+    border-radius: 15px;
+    box-shadow: 2px 2px 0px white;
+}
+.btn-altera:hover {
+    background-color: greenyellow;
+    box-shadow: 2px 2px 0px red;
+ 
+}
+
+/* ----------------------------------------------------------------------------*/
+header {
+    background-color: rgb(0, 195, 255);
+}
+
+header .conteiner {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+
+header .conteiner nav ul {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+header .conteiner nav ul li {
+    list-style-type: none;
+    font-weight: 600;
+    font-size: 18px;
+}
+header .conteiner nav ul li a{
+    padding: 15px;
+}
+header .conteiner nav ul li :hover {
+    border: 2px solid white;
+    border-radius: 15px;
+    padding: 14px;
+    background-color: black;
+}
+
+header .conteiner .botao-principal {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+header .conteiner .botao-principal a {
+    margin: 10px;
+}
+header .conteiner .botao-principal a button {
+    padding: 13px;
+    font-size: 18px;
+    font-weight: 600;
+    background-color: black;
+    color: rgb(0, 195, 255);
+    border: 3px solid rgb(0, 195, 255);
+    border-radius: 15px;
+    box-shadow: 2px 2px 0px white;
+}
+header .conteiner .botao-principal a button:hover {
+    background-color: rgba(255, 217, 0, 0.973);
+}
+/* -----------------------------------------------------------------------------*/
+
+/* -----------------------------------------------------------------------------*/
+section {
+    margin:3% 4%;
+}
+
+section .conteiner {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-image: url(../image/coffee.jpg);
+    background-position: center;
+    height: 70vh;
+    border: 2px solid rgb(0, 195, 255);
+    border-radius: 15px;
+    padding: 10px;
+}
+
+section .conteiner .div-txt-1 {
+    /*
+    border: 1px solid gold;
+    border-radius: 30px;
+    */
+    padding: 15px;
+    width: 60%;
+}
+section .conteiner .div-txt-1 h1 {
+    font-size: 40px;
+    font-weight: 700;
+    text-align: justify;
+    margin-bottom: 50px;
+    color: gold;
+    text-shadow: 2px 2px 1px black;
+}
+section .conteiner .div-txt-1 p {
+    font-size: 20px;
+    text-align: justify;
+    margin: 25px;
+}
+
+section .conteiner .div-img-1 {
+    padding: 10px;
+}
+section .conteiner .div-img-1 a img {
+    border-radius: 50px;
+}

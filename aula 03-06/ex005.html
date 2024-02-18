@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+        body {
+            background-color: rgb(21, 21, 248);
+            color: rgb(21, 21, 248);
+            text-align: center;
+            margin: 0;
+            padding: 0;
+        }
+        .container {
+            background-color: black;
+            height: 100vh;
+            margin: 10px;
+        }
+        h1 {
+            color: white;
+            font-family: arial;
+            text-shadow: 2px 2px 1px rgb(43, 90, 192);
+            margin-top: 10px;
+            padding-top: 20px;
+            padding-bottom: 100px;
+        }
+        .boxx {
+            width: 80%;
+            height: 50vh;
+            border: 2px solid rgb(21, 21, 248);
+            text-align: center;
+            padding: 5px;
+        }
+        h3 {
+            color: white;
+        }
+    </style>
+
+</head>
+
+<body>
+    <div class="container">
+        <h1>Lucy</h1>
+        <center>
+            <div class="boxx">
+                <h3 id="nomehtml"></h3>
+                <h3 id="idadehtml"></h3>
+
+                <script>
+                    window.alert("A Lucy date as boas vindas!");
+                    var nome = window.prompt("Qual é o seu nome?");
+                    var idade = Number.parseInt(window.prompt("Qual é a sua idade?"));
+                    var a = window.confirm("Dados arquivados, podemos continuar!");
+
+                    document.getElementById("nomehtml").innerHTML=`Nome: ${nome}`;
+                    document.getElementById("idadehtml").innerHTML=`Idade: ${idade}`;
+
+                    var n1 = Number(window.prompt("Digite um numero"));
+                    var n2 = Number(window.prompt("Digite um numero"));
+                    var adiçao = n1 + n2;
+                    var subtraçao = n1 - n2;
+                    var multiplicaçao = n1 * n2;
+                    var divisao = n1 / n2;
+
+                    document.write("-------------------- Matemática --------------------<br><br><br>");
+                    document.write(`${n1} + ${n2} = ${adiçao} <br>`);
+                    document.write(`${n1} - ${n2} = ${subtraçao} <br>`);
+                    document.write(`${n1} * ${n2} = ${multiplicaçao} <br>`);
+                    document.write(`${n1} / ${n2} = ${divisao} <br>`);
+
+                </script>
+            </div>
+        </center>
+    </div>
+
+</body>
+</html>

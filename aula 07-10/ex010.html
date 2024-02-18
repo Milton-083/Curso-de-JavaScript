@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculadora</title>
+    <style>
+        body {background-color: black;}
+        .conteiner {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+        .tudo {
+            padding: 5% 10% 0 10%;
+            height: 90vh;
+            display: inline-block;
+        }
+        h1 {
+            text-align: center;
+            margin-bottom: 100px;
+            color: white;
+            font-size: 50px;
+        }
+        input {
+            margin: 10px 60px;
+            padding: 10px;
+            width: 25%;
+            text-align: center;
+            box-shadow: 1px 1px 8px rgb(1, 39, 255);
+        }
+        #hh3 {
+            margin: 0px 0px;
+            padding: 0;
+            width: 25%;
+            color: rgb(255, 255, 255);
+            font-size: 30px;
+        }
+        .hhhh3 {
+            width: 170px;
+            line-height: 70px;
+            background-color: rgb(255, 1, 1);
+            box-shadow: 1px 1px 8px rgb(1, 39, 255);
+            color: white;
+        }
+        input#soma {
+            background-color: greenyellow;
+            color: black;
+            font-weight: 600;
+        }
+    </style>
+</head>
+<body>
+    <div class="conteiner">
+        <div class="tudo">
+            <center>
+                <h1>Calculadora</h1>
+                <input type="number" name="numero-1" id="numero-1">
+                <h3 id="hh3">+</h3>
+                <input type="number" name="numero-2" id="numero-2">
+                <br>
+                <input type="button" value="somar" id="soma" onclick="somar()">
+                <h3 id="hhh3" class="hhhh3">resultado</h3>
+            </center>
+        </div>
+    </div>
+
+    <script>
+        function somar() {
+            var n1 = Number(window.document.getElementById("numero-1").value)
+            var n2 = Number(window.document.getElementById("numero-2").value)
+            var somado = n1 + n2
+            var resultado = window.document.getElementById("hhh3")
+
+            resultado.innerHTML=somado;
+        }
+    </script>
+</body>
+</html>
